@@ -46,7 +46,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/media/sf_E_DRIVE/petrsu/unit_testing/001-bundle-qt-gtest/app/cmake_install.cmake")
   include("/media/sf_E_DRIVE/petrsu/unit_testing/001-bundle-qt-gtest/tests/cmake_install.cmake")
-
+  include("/media/sf_E_DRIVE/petrsu/unit_testing/001-bundle-qt-gtest/external/googletest/cmake_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)

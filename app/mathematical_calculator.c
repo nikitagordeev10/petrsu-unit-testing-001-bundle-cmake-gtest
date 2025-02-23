@@ -50,10 +50,7 @@ void viet(float a, float b, float c, float* x1, float* x2, int* found) {
 }
 
 int modify_value(int b) {
-    char *buffer = malloc(sizeof(char) * 1000);
-    buffer [0] = b + 4;
-    // здесь должен ругаться sonarcloud, т.к. утечка памяти
-    return buffer[0];
+    return b + 4;
 }
 
 int val;
