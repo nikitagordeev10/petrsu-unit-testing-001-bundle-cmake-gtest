@@ -10,6 +10,9 @@ app/app
 tests/tests
 Testing
 
+CMakeCache.txt
+CMakeCache1.txt
+
 # # CMake build directories
 # /build/
 # CMakeFiles/
