@@ -10,7 +10,7 @@ tests/tests
 # # CMake build directories
 # /build/
 # CMakeFiles/
-CMakeCache.txt
+# CMakeCache.txt
 # Makefile
 # cmake_install.cmake
 
