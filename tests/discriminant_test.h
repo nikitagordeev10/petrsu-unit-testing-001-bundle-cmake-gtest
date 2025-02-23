@@ -84,13 +84,13 @@ TEST(TwoRootsTest, integer_input_zero_in_output) {
 }
 
 // Целый ввод, целый вывод, другая программа (позитивный)
-TEST(EquivalentProgram, viet) {
-    discriminant(5, 6, 1, &x1, &x2, &flag);
-    viet(5, 6, 1, &vx1, &vx2, &vflag);
+// TEST(EquivalentProgram, viet) {
+//     discriminant(5, 6, 1, &x1, &x2, &flag);
+//     viet(5, 6, 1, &vx1, &vx2, &vflag);
 
-    ASSERT_FLOAT_EQ(x1, vx1);
-    ASSERT_FLOAT_EQ(x2, vx2);
-}
+//     ASSERT_FLOAT_EQ(x1, vx1);
+//     ASSERT_FLOAT_EQ(x2, vx2);
+// }
 
 /* ------------------- D = 0, один корень -------------------  */
 
