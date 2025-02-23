@@ -9,7 +9,7 @@
 #include <math.h>
 
 extern "C" {
-#include "myfunc.h"
+#include "mathematical_calculator.h"
 }
 
 /* ------------------- Константы -------------------  */
