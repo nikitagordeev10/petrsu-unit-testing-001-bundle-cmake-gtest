@@ -1,5 +1,5 @@
 app/CMakeFiles/ctest.dir/main.c.o: \
- /media/sf_E_DRIVE/petrsu/unit_testing/001-bundle-qt-gtest/001-bundle-qt-gtest/app/main.c \
+ /media/sf_E_DRIVE/petrsu/unit_testing/001-bundle-qt-gtest/app/main.c \
  /usr/include/stdc-predef.h /usr/include/stdio.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -24,4 +24,4 @@ app/CMakeFiles/ctest.dir/main.c.o: \
  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
  /usr/include/x86_64-linux-gnu/bits/floatn.h \
  /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
- /media/sf_E_DRIVE/petrsu/unit_testing/001-bundle-qt-gtest/001-bundle-qt-gtest/app/mathematical_calculator.h
+ /media/sf_E_DRIVE/petrsu/unit_testing/001-bundle-qt-gtest/app/mathematical_calculator.h

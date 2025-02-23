@@ -1,4 +1,4 @@
-# Install script for directory: /media/sf_E_DRIVE/petrsu/unit_testing/001-bundle-qt-gtest/001-bundle-qt-gtest/app
+# Install script for directory: /media/sf_E_DRIVE/petrsu/unit_testing/001-bundle-qt-gtest/app
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

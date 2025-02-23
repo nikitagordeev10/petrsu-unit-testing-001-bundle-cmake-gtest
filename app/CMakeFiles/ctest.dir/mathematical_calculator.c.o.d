@@ -1,5 +1,5 @@
 app/CMakeFiles/ctest.dir/mathematical_calculator.c.o: \
- /media/sf_E_DRIVE/petrsu/unit_testing/001-bundle-qt-gtest/001-bundle-qt-gtest/app/mathematical_calculator.c \
+ /media/sf_E_DRIVE/petrsu/unit_testing/001-bundle-qt-gtest/app/mathematical_calculator.c \
  /usr/include/stdc-predef.h /usr/include/stdio.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -56,4 +56,4 @@ app/CMakeFiles/ctest.dir/mathematical_calculator.c.o: \
  /usr/include/x86_64-linux-gnu/bits/fp-fast.h \
  /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h \
  /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
- /media/sf_E_DRIVE/petrsu/unit_testing/001-bundle-qt-gtest/001-bundle-qt-gtest/app/mathematical_calculator.h
+ /media/sf_E_DRIVE/petrsu/unit_testing/001-bundle-qt-gtest/app/mathematical_calculator.h

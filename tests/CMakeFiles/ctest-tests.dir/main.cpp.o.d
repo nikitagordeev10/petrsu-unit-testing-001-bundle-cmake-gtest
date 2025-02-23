@@ -1,7 +1,7 @@
 tests/CMakeFiles/ctest-tests.dir/main.cpp.o: \
- /media/sf_E_DRIVE/petrsu/unit_testing/001-bundle-qt-gtest/001-bundle-qt-gtest/tests/main.cpp \
+ /media/sf_E_DRIVE/petrsu/unit_testing/001-bundle-qt-gtest/tests/main.cpp \
  /usr/include/stdc-predef.h \
- /media/sf_E_DRIVE/petrsu/unit_testing/001-bundle-qt-gtest/001-bundle-qt-gtest/tests/tst_modify_value.h \
+ /media/sf_E_DRIVE/petrsu/unit_testing/001-bundle-qt-gtest/tests/tst_modify_value.h \
  /usr/include/gtest/gtest.h /usr/include/c++/13/cstddef \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \
@@ -277,15 +277,15 @@ tests/CMakeFiles/ctest-tests.dir/main.cpp.o: \
  /usr/include/gmock/internal/custom/gmock-port.h \
  /usr/include/gmock/internal/gmock-pp.h \
  /usr/include/gmock/internal/custom/gmock-matchers.h \
- /media/sf_E_DRIVE/petrsu/unit_testing/001-bundle-qt-gtest/001-bundle-qt-gtest/tests/../app/mathematical_calculator.h \
- /media/sf_E_DRIVE/petrsu/unit_testing/001-bundle-qt-gtest/001-bundle-qt-gtest/tests/fibonachi_test.h \
+ /media/sf_E_DRIVE/petrsu/unit_testing/001-bundle-qt-gtest/tests/../app/mathematical_calculator.h \
+ /media/sf_E_DRIVE/petrsu/unit_testing/001-bundle-qt-gtest/tests/fibonachi_test.h \
  /usr/include/fcntl.h /usr/include/x86_64-linux-gnu/bits/fcntl.h \
  /usr/include/x86_64-linux-gnu/bits/fcntl-linux.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h \
  /usr/include/linux/falloc.h \
- /media/sf_E_DRIVE/petrsu/unit_testing/001-bundle-qt-gtest/001-bundle-qt-gtest/tests/discriminant_test.h \
+ /media/sf_E_DRIVE/petrsu/unit_testing/001-bundle-qt-gtest/tests/discriminant_test.h \
  /usr/include/c++/13/math.h \
- /media/sf_E_DRIVE/petrsu/unit_testing/001-bundle-qt-gtest/001-bundle-qt-gtest/tests/tst_stdout.h \
+ /media/sf_E_DRIVE/petrsu/unit_testing/001-bundle-qt-gtest/tests/tst_stdout.h \
  /usr/include/c++/13/fstream \
  /usr/include/x86_64-linux-gnu/c++/13/bits/basic_file.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++io.h \

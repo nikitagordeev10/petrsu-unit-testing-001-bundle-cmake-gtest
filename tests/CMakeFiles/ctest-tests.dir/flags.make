@@ -3,15 +3,15 @@
 
 # compile C with /usr/bin/cc
 # compile CXX with /usr/bin/c++
-C_DEFINES = -DINPUTDIR=\"/media/sf_E_DRIVE/petrsu/unit_testing/001-bundle-qt-gtest/001-bundle-qt-gtest/tests/input\"
+C_DEFINES = -DINPUTDIR=\"/media/sf_E_DRIVE/petrsu/unit_testing/001-bundle-qt-gtest/tests/input\"
 
-C_INCLUDES = -I/media/sf_E_DRIVE/petrsu/unit_testing/001-bundle-qt-gtest/001-bundle-qt-gtest/tests/ctest-tests -I/media/sf_E_DRIVE/petrsu/unit_testing/001-bundle-qt-gtest/001-bundle-qt-gtest/tests/PUBLIC -I/media/sf_E_DRIVE/petrsu/unit_testing/001-bundle-qt-gtest/001-bundle-qt-gtest/tests/../app
+C_INCLUDES = -I/media/sf_E_DRIVE/petrsu/unit_testing/001-bundle-qt-gtest/tests/ctest-tests -I/media/sf_E_DRIVE/petrsu/unit_testing/001-bundle-qt-gtest/tests/PUBLIC -I/media/sf_E_DRIVE/petrsu/unit_testing/001-bundle-qt-gtest/tests/../app
 
 C_FLAGS = -Wall -Wextra -Wpedantic -Wconversion -Wunreachable-code -Wold-style-cast -fprofile-arcs -ftest-coverage
 
-CXX_DEFINES = -DINPUTDIR=\"/media/sf_E_DRIVE/petrsu/unit_testing/001-bundle-qt-gtest/001-bundle-qt-gtest/tests/input\"
+CXX_DEFINES = -DINPUTDIR=\"/media/sf_E_DRIVE/petrsu/unit_testing/001-bundle-qt-gtest/tests/input\"
 
-CXX_INCLUDES = -I/media/sf_E_DRIVE/petrsu/unit_testing/001-bundle-qt-gtest/001-bundle-qt-gtest/tests/ctest-tests -I/media/sf_E_DRIVE/petrsu/unit_testing/001-bundle-qt-gtest/001-bundle-qt-gtest/tests/PUBLIC -I/media/sf_E_DRIVE/petrsu/unit_testing/001-bundle-qt-gtest/001-bundle-qt-gtest/tests/../app
+CXX_INCLUDES = -I/media/sf_E_DRIVE/petrsu/unit_testing/001-bundle-qt-gtest/tests/ctest-tests -I/media/sf_E_DRIVE/petrsu/unit_testing/001-bundle-qt-gtest/tests/PUBLIC -I/media/sf_E_DRIVE/petrsu/unit_testing/001-bundle-qt-gtest/tests/../app
 
 CXX_FLAGS = -Wall -Wextra -Wpedantic -Wconversion -Wunreachable-code -Wold-style-cast -fprofile-arcs -ftest-coverage -std=gnu++14
 

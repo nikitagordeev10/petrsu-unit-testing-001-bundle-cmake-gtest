@@ -45,5 +45,3 @@ gtest_add_tests(TARGET      ${PROJECT_NAME}
         TEST_SUFFIX .withArgs
         TEST_LIST   withArgsTests
         )
-
-        

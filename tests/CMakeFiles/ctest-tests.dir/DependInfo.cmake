@@ -8,8 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/media/sf_E_DRIVE/petrsu/unit_testing/001-bundle-qt-gtest/001-bundle-qt-gtest/app/mathematical_calculator.c" "tests/CMakeFiles/ctest-tests.dir/__/app/mathematical_calculator.c.o" "gcc" "tests/CMakeFiles/ctest-tests.dir/__/app/mathematical_calculator.c.o.d"
-  "/media/sf_E_DRIVE/petrsu/unit_testing/001-bundle-qt-gtest/001-bundle-qt-gtest/tests/main.cpp" "tests/CMakeFiles/ctest-tests.dir/main.cpp.o" "gcc" "tests/CMakeFiles/ctest-tests.dir/main.cpp.o.d"
+  "/media/sf_E_DRIVE/petrsu/unit_testing/001-bundle-qt-gtest/app/mathematical_calculator.c" "tests/CMakeFiles/ctest-tests.dir/__/app/mathematical_calculator.c.o" "gcc" "tests/CMakeFiles/ctest-tests.dir/__/app/mathematical_calculator.c.o.d"
+  "/media/sf_E_DRIVE/petrsu/unit_testing/001-bundle-qt-gtest/tests/main.cpp" "tests/CMakeFiles/ctest-tests.dir/main.cpp.o" "gcc" "tests/CMakeFiles/ctest-tests.dir/main.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

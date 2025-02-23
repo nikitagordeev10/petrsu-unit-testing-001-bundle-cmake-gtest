@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /media/sf_E_DRIVE/petrsu/unit_testing/001-bundle-qt-gtest/001-bundle-qt-gtest
+CMAKE_SOURCE_DIR = /media/sf_E_DRIVE/petrsu/unit_testing/001-bundle-qt-gtest
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /media/sf_E_DRIVE/petrsu/unit_testing/001-bundle-qt-gtest/001-bundle-qt-gtest
+CMAKE_BINARY_DIR = /media/sf_E_DRIVE/petrsu/unit_testing/001-bundle-qt-gtest
 
 # Include any dependencies generated for this target.
 include app/CMakeFiles/ctest.dir/depend.make
@@ -72,30 +72,30 @@ include app/CMakeFiles/ctest.dir/flags.make
 app/CMakeFiles/ctest.dir/main.c.o: app/CMakeFiles/ctest.dir/flags.make
 app/CMakeFiles/ctest.dir/main.c.o: app/main.c
 app/CMakeFiles/ctest.dir/main.c.o: app/CMakeFiles/ctest.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/media/sf_E_DRIVE/petrsu/unit_testing/001-bundle-qt-gtest/001-bundle-qt-gtest/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object app/CMakeFiles/ctest.dir/main.c.o"
-	cd /media/sf_E_DRIVE/petrsu/unit_testing/001-bundle-qt-gtest/001-bundle-qt-gtest/app && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT app/CMakeFiles/ctest.dir/main.c.o -MF CMakeFiles/ctest.dir/main.c.o.d -o CMakeFiles/ctest.dir/main.c.o -c /media/sf_E_DRIVE/petrsu/unit_testing/001-bundle-qt-gtest/001-bundle-qt-gtest/app/main.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/media/sf_E_DRIVE/petrsu/unit_testing/001-bundle-qt-gtest/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object app/CMakeFiles/ctest.dir/main.c.o"
+	cd /media/sf_E_DRIVE/petrsu/unit_testing/001-bundle-qt-gtest/app && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT app/CMakeFiles/ctest.dir/main.c.o -MF CMakeFiles/ctest.dir/main.c.o.d -o CMakeFiles/ctest.dir/main.c.o -c /media/sf_E_DRIVE/petrsu/unit_testing/001-bundle-qt-gtest/app/main.c
 
 app/CMakeFiles/ctest.dir/main.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/ctest.dir/main.c.i"
-	cd /media/sf_E_DRIVE/petrsu/unit_testing/001-bundle-qt-gtest/001-bundle-qt-gtest/app && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /media/sf_E_DRIVE/petrsu/unit_testing/001-bundle-qt-gtest/001-bundle-qt-gtest/app/main.c > CMakeFiles/ctest.dir/main.c.i
+	cd /media/sf_E_DRIVE/petrsu/unit_testing/001-bundle-qt-gtest/app && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /media/sf_E_DRIVE/petrsu/unit_testing/001-bundle-qt-gtest/app/main.c > CMakeFiles/ctest.dir/main.c.i
 
 app/CMakeFiles/ctest.dir/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/ctest.dir/main.c.s"
-	cd /media/sf_E_DRIVE/petrsu/unit_testing/001-bundle-qt-gtest/001-bundle-qt-gtest/app && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /media/sf_E_DRIVE/petrsu/unit_testing/001-bundle-qt-gtest/001-bundle-qt-gtest/app/main.c -o CMakeFiles/ctest.dir/main.c.s
+	cd /media/sf_E_DRIVE/petrsu/unit_testing/001-bundle-qt-gtest/app && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /media/sf_E_DRIVE/petrsu/unit_testing/001-bundle-qt-gtest/app/main.c -o CMakeFiles/ctest.dir/main.c.s
 
 app/CMakeFiles/ctest.dir/mathematical_calculator.c.o: app/CMakeFiles/ctest.dir/flags.make
 app/CMakeFiles/ctest.dir/mathematical_calculator.c.o: app/mathematical_calculator.c
 app/CMakeFiles/ctest.dir/mathematical_calculator.c.o: app/CMakeFiles/ctest.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/media/sf_E_DRIVE/petrsu/unit_testing/001-bundle-qt-gtest/001-bundle-qt-gtest/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object app/CMakeFiles/ctest.dir/mathematical_calculator.c.o"
-	cd /media/sf_E_DRIVE/petrsu/unit_testing/001-bundle-qt-gtest/001-bundle-qt-gtest/app && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT app/CMakeFiles/ctest.dir/mathematical_calculator.c.o -MF CMakeFiles/ctest.dir/mathematical_calculator.c.o.d -o CMakeFiles/ctest.dir/mathematical_calculator.c.o -c /media/sf_E_DRIVE/petrsu/unit_testing/001-bundle-qt-gtest/001-bundle-qt-gtest/app/mathematical_calculator.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/media/sf_E_DRIVE/petrsu/unit_testing/001-bundle-qt-gtest/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object app/CMakeFiles/ctest.dir/mathematical_calculator.c.o"
+	cd /media/sf_E_DRIVE/petrsu/unit_testing/001-bundle-qt-gtest/app && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT app/CMakeFiles/ctest.dir/mathematical_calculator.c.o -MF CMakeFiles/ctest.dir/mathematical_calculator.c.o.d -o CMakeFiles/ctest.dir/mathematical_calculator.c.o -c /media/sf_E_DRIVE/petrsu/unit_testing/001-bundle-qt-gtest/app/mathematical_calculator.c
 
 app/CMakeFiles/ctest.dir/mathematical_calculator.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/ctest.dir/mathematical_calculator.c.i"
-	cd /media/sf_E_DRIVE/petrsu/unit_testing/001-bundle-qt-gtest/001-bundle-qt-gtest/app && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /media/sf_E_DRIVE/petrsu/unit_testing/001-bundle-qt-gtest/001-bundle-qt-gtest/app/mathematical_calculator.c > CMakeFiles/ctest.dir/mathematical_calculator.c.i
+	cd /media/sf_E_DRIVE/petrsu/unit_testing/001-bundle-qt-gtest/app && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /media/sf_E_DRIVE/petrsu/unit_testing/001-bundle-qt-gtest/app/mathematical_calculator.c > CMakeFiles/ctest.dir/mathematical_calculator.c.i
 
 app/CMakeFiles/ctest.dir/mathematical_calculator.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/ctest.dir/mathematical_calculator.c.s"
-	cd /media/sf_E_DRIVE/petrsu/unit_testing/001-bundle-qt-gtest/001-bundle-qt-gtest/app && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /media/sf_E_DRIVE/petrsu/unit_testing/001-bundle-qt-gtest/001-bundle-qt-gtest/app/mathematical_calculator.c -o CMakeFiles/ctest.dir/mathematical_calculator.c.s
+	cd /media/sf_E_DRIVE/petrsu/unit_testing/001-bundle-qt-gtest/app && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /media/sf_E_DRIVE/petrsu/unit_testing/001-bundle-qt-gtest/app/mathematical_calculator.c -o CMakeFiles/ctest.dir/mathematical_calculator.c.s
 
 # Object files for target ctest
 ctest_OBJECTS = \
@@ -109,18 +109,18 @@ app/ctest: app/CMakeFiles/ctest.dir/main.c.o
 app/ctest: app/CMakeFiles/ctest.dir/mathematical_calculator.c.o
 app/ctest: app/CMakeFiles/ctest.dir/build.make
 app/ctest: app/CMakeFiles/ctest.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/media/sf_E_DRIVE/petrsu/unit_testing/001-bundle-qt-gtest/001-bundle-qt-gtest/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable ctest"
-	cd /media/sf_E_DRIVE/petrsu/unit_testing/001-bundle-qt-gtest/001-bundle-qt-gtest/app && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ctest.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/media/sf_E_DRIVE/petrsu/unit_testing/001-bundle-qt-gtest/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable ctest"
+	cd /media/sf_E_DRIVE/petrsu/unit_testing/001-bundle-qt-gtest/app && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ctest.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 app/CMakeFiles/ctest.dir/build: app/ctest
 .PHONY : app/CMakeFiles/ctest.dir/build
 
 app/CMakeFiles/ctest.dir/clean:
-	cd /media/sf_E_DRIVE/petrsu/unit_testing/001-bundle-qt-gtest/001-bundle-qt-gtest/app && $(CMAKE_COMMAND) -P CMakeFiles/ctest.dir/cmake_clean.cmake
+	cd /media/sf_E_DRIVE/petrsu/unit_testing/001-bundle-qt-gtest/app && $(CMAKE_COMMAND) -P CMakeFiles/ctest.dir/cmake_clean.cmake
 .PHONY : app/CMakeFiles/ctest.dir/clean
 
 app/CMakeFiles/ctest.dir/depend:
-	cd /media/sf_E_DRIVE/petrsu/unit_testing/001-bundle-qt-gtest/001-bundle-qt-gtest && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /media/sf_E_DRIVE/petrsu/unit_testing/001-bundle-qt-gtest/001-bundle-qt-gtest /media/sf_E_DRIVE/petrsu/unit_testing/001-bundle-qt-gtest/001-bundle-qt-gtest/app /media/sf_E_DRIVE/petrsu/unit_testing/001-bundle-qt-gtest/001-bundle-qt-gtest /media/sf_E_DRIVE/petrsu/unit_testing/001-bundle-qt-gtest/001-bundle-qt-gtest/app /media/sf_E_DRIVE/petrsu/unit_testing/001-bundle-qt-gtest/001-bundle-qt-gtest/app/CMakeFiles/ctest.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /media/sf_E_DRIVE/petrsu/unit_testing/001-bundle-qt-gtest && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /media/sf_E_DRIVE/petrsu/unit_testing/001-bundle-qt-gtest /media/sf_E_DRIVE/petrsu/unit_testing/001-bundle-qt-gtest/app /media/sf_E_DRIVE/petrsu/unit_testing/001-bundle-qt-gtest /media/sf_E_DRIVE/petrsu/unit_testing/001-bundle-qt-gtest/app /media/sf_E_DRIVE/petrsu/unit_testing/001-bundle-qt-gtest/app/CMakeFiles/ctest.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : app/CMakeFiles/ctest.dir/depend
 
