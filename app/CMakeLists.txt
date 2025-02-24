@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.10)
+cmake_minimum_required(VERSION 3.7)
 project(ctest)
 
 set(CMAKE_CXX_STANDARD 11)
@@ -12,7 +12,7 @@ set(SOURCES
         )
 
 set(HEADERS
-        mathematical_calculator.h
+mathematical_calculator.h
         )
 
 add_executable(${PROJECT_NAME} ${SOURCES} ${HEADERS})
