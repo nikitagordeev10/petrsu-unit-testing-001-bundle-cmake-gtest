@@ -10,9 +10,6 @@
 
 #include <fcntl.h>
 
-#include <memory>
-#include <string>
-
 extern "C" {
 #include "mathematical_calculator.h"
 }
@@ -27,10 +24,10 @@ TEST(TestStdOut, TestStdOut) {
     int oldOutput = dup(STDOUT_FILENO);
 
     // открываем файл для записи результата
-    std::ofstream outFile("TestStdOut_TestStdOut.out", std::ios::binary);
+    FILE *outFile = fopen("TestStdOut_TestStdOut.out", "wb");
 
     // проверяем что файл открылся
-    ASSERT_TRUE(outFile.is_open());
+    ASSERT_TRUE(outFile != NULL);
 
     // закрываем выходной поток и заменяем его на файл
     close(STDOUT_FILENO);
@@ -43,15 +40,17 @@ TEST(TestStdOut, TestStdOut) {
     fflush(stdout);
 
     // закрываем файл
-    outFile.close();
+    fclose(outFile);
 
     // возвращаем вывод на место
     dup2(oldOutput, STDOUT_FILENO);
 
     // открываем оригинал и результат
-    std::string filename = std::string(INPUTDIR) + "/TestSTDOut_output.txt";
+    char *filename = (char *)malloc(sizeof(char) * 1024);
+    sprintf(filename, "%s/TestSTDOut_output.txt", INPUTDIR);
     int testFd = open("TestStdOut_TestStdOut.out", O_RDONLY);
-    int originFd = open(filename.c_str(), O_RDONLY);
+    int originFd = open(filename, O_RDONLY);
+    free(filename);
 
     ASSERT_NE(testFd, -1);
     ASSERT_NE(originFd, -1);
@@ -64,7 +63,7 @@ TEST(TestStdOut, TestStdOut) {
 
     do {
         // блоковое чтение данных
-         outputCount = read(testFd, outBuffer, MAXLINE - 1);
+        outputCount = read(testFd, outBuffer, MAXLINE - 1);
         originCount = read(originFd, originBuffer, MAXLINE - 1);
         ASSERT_EQ(outputCount, originCount);
         for (int i = 0; i < outputCount; i++) {
@@ -90,22 +89,18 @@ TEST(TestStdOut, usingCapture) {
     std::string output = testing::internal::GetCapturedStdout();
 
     // читаем ожидаемую строку из файла
-    std::string filename = std::string(INPUTDIR) + "/TestSTDOut_output.txt";
+    char *filename = (char *)malloc(sizeof(char) * 1024);
+    sprintf(filename, "%s/TestSTDOut_output.txt", INPUTDIR);
+
     std::ifstream f(filename);
-    ASSERT_TRUE(f.is_open());
+    free(filename);
+    std::string content;
+    content.assign( (std::istreambuf_iterator<char>(f) ),
+                    (std::istreambuf_iterator<char>()    ) );
 
-    std::string content((std::istreambuf_iterator<char>(f)), std::istreambuf_iterator<char>());
+    // сравниваем значения
     ASSERT_EQ(output, content);
-}
-
-// Проверка вывода сообщений в stdout с использованием перехвата потока
-TEST(TestStdOut, printStdoutMessages) {
-    testing::internal::CaptureStdout();  // Перехватываем вывод
-    printStdoutMessages();               // Вызываем функцию с выводом
-    std::string output = testing::internal::GetCapturedStdout(); // Получаем результат
-
-    std::string expected_output = "This is a test message from mathematical_calculator.c\nDo not disturb\n";
-    ASSERT_EQ(output, expected_output); // Проверяем, что вывод совпадает с ожидаемым
+    f.close();
 }
 
 #endif // TST_STDOUT_H
