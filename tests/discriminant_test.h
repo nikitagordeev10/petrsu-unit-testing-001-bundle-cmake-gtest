@@ -55,7 +55,7 @@ TEST(TwoRootsTest, float_input_float_output) {
 }
 
 // Неполный целый ввод без первого элемента (негативный)
-TEST(OneRootTest, integer_input_integer_output) {
+TEST(TwoRootsTest, integer_input_integer_output) {
     double x1, x2;
     int flag;
     discriminant(1, 4, 4, &x1, &x2, &flag);
@@ -65,7 +65,7 @@ TEST(OneRootTest, integer_input_integer_output) {
 }
 
 // Неполный целый ввод без второго элемента (негативный)
-TEST(OneRootTest, integer_input_float_output) {
+TEST(TwoRootsTest, integer_input_float_output) {
     double x1, x2;
     int flag;
     discriminant(9, 6, 1, &x1, &x2, &flag);
@@ -167,14 +167,6 @@ TEST(NoRootsTest, float_input_no_output) {
     ASSERT_EQ(1, flag);
 }
 
-// Целый ввод, ошибка переполнения (негативный тест)
-TEST(LargeNumbersTest, large_numbers_input_no_output) {
-    double x1, x2;
-    int flag;
-    discriminant(pow(10,1000000000), pow(10,100), 10, &x1, &x2, &flag);
-    ASSERT_EQ(1, flag);
-}
-
 // Проверка с маленькими коэффициентами
 TEST(NoRootsTest, very_small_input_no_output) {
     double x1, x2;
@@ -207,6 +199,14 @@ TEST(LargeNumbersTest, extremely_large_numbers) {
     int flag;
     discriminant(pow(10, 100), pow(10, 50), 1, &x1, &x2, &flag);
     ASSERT_EQ(1, flag);  // Проверка на переполнение
+}
+
+// Целый ввод, ошибка переполнения (негативный тест)
+TEST(LargeNumbersTest, large_numbers_input_no_output) {
+    double x1, x2;
+    int flag;
+    discriminant(pow(10,1000000000), pow(10,100), 10, &x1, &x2, &flag);
+    ASSERT_EQ(1, flag);
 }
 
 #endif // DISCRIMINANT_H
