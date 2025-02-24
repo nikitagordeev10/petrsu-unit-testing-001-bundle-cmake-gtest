@@ -6,6 +6,8 @@
 #include <fcntl.h>
 #include <errno.h>
 #include <unistd.h>
+#include <string>
+#include <vector>
 
 extern "C" {
 #include "mathematical_calculator.h"
@@ -27,25 +29,20 @@ TEST(fibonachiTest, negative) {
 }
 
 TEST(fibonachiTest, inputFile) {
-    val = 2;
-    char *filename = (char *)malloc(sizeof(char) * 1024);
-    sprintf(filename, "%s/input321.txt", INPUTDIR);
+    int val = 2;
+    std::string filename = std::string(INPUTDIR) + "/input321.txt";
 
-    int fd = open(filename, O_RDONLY);
-    free(filename);
-    if (fd < 0) {
-        ASSERT_EQ(errno, 0);
-    }
+    int fd = open(filename.c_str(), O_RDONLY);
+    ASSERT_NE(fd, -1); // check that the file was opened successfully
 
-    char *buf = (char *)malloc(sizeof(char) * 512);
-    int readcount = read(fd, buf, 512);
-    ASSERT_TRUE(readcount > 0);
+    std::vector<char> buf(512);
+    ssize_t readcount = read(fd, buf.data(), buf.size());  // using std::vector
+    ASSERT_GT(readcount, 0);
     close(fd);
 
     int input = 0;
-    int output =0;
-    int ret = sscanf(buf, "%d %d", &input, &output);
-    free(buf);
+    int output = 0;
+    int ret = sscanf(buf.data(), "%d %d", &input, &output);  // using std::vector
     ASSERT_EQ(ret, 2);
 
     ret = fibonachi(input);

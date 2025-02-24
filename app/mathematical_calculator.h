@@ -1,9 +1,7 @@
 #ifndef MATHEMATICAL_CALCULATOR_H
 #define MATHEMATICAL_CALCULATOR_H
 
-void discriminant(float a, float b, float c, float* x1, float* x2, int* has_real_roots);
-
-void viet(float a, float b, float c, float* x1, float* x2, int* found);
+void discriminant(double a, double b, double c, double* x1, double* x2, int* has_real_roots);
 
 int modify_value(int b);
 

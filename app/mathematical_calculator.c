@@ -4,15 +4,15 @@
 #include <math.h>
 #include "mathematical_calculator.h"
 
-void discriminant(float a, float b, float c, float* x1, float* x2, int* has_real_roots) {
-    float d; // Дискриминант
+void discriminant(double a, double b, double c, double* x1, double* x2, int* has_real_roots) {
+    double d; // Дискриминант
     *has_real_roots = 0;
 
     if (a != 0) {
         d = b * b - 4 * a * c;
         if (d > 0) {
-            *x1 = (float)((-b - sqrt(d)) / (2 * a));
-            *x2 = (float)((-b + sqrt(d)) / (2 * a));
+            *x1 = (double)((-b - sqrt(d)) / (2 * a));
+            *x2 = (double)((-b + sqrt(d)) / (2 * a));
         } else if (d == 0) {
             *x1 = *x2 = -b / (2 * a);
         } else {
