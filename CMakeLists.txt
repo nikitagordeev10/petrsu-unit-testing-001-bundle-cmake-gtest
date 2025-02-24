@@ -9,10 +9,18 @@ pkg_check_modules(gtest gtest>=1.10)
 
 add_subdirectory(app)
 
+include(FetchContent)
 if(NOT gtest_FOUND)
-    message("Google test not installed, use it's source code from external folder!!!")
-    add_subdirectory(external/googletest)
-endif(NOT gtest_FOUND)
+    message(STATUS "GoogleTest not found, fetching from GitHub...")
+
+    FetchContent_Declare(
+        googletest
+        GIT_REPOSITORY https://github.com/google/googletest.git
+        GIT_TAG release-1.14.0
+    )
+
+    FetchContent_MakeAvailable(googletest)
+endif()
 
 add_subdirectory(tests)
 enable_testing()
