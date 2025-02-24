@@ -16,7 +16,8 @@ extern "C" {
 
 // Целый ввод, целый вывод(позитивный)
 TEST(TwoRootsTest, integer_input_integer_output) {
-    double x1, x2;
+    double x1;
+    double x2;
     int flag;
     discriminant(1, -5, 4, &x1, &x2, &flag);
     ASSERT_DOUBLE_EQ(1.0, x1);
@@ -26,7 +27,8 @@ TEST(TwoRootsTest, integer_input_integer_output) {
 
 // Целый ввод, дробный вывод (позитивный)
 TEST(TwoRootsTest, integer_input_doulbe_output) {
-    double x1, x2;
+    double x1;
+    double x2;
     int flag;
     discriminant(-7, 13, 5, &x1, &x2, &flag);
     ASSERT_DOUBLE_EQ(2.184171, round(x1 * 1e6) / 1e6);
@@ -36,7 +38,8 @@ TEST(TwoRootsTest, integer_input_doulbe_output) {
 
 // Дробный ввод, целый вывод (позитивный)
 TEST(TwoRootsTest, doulbe_input_integer_output) {
-    double x1, x2;
+    double x1;
+    double x2;
     int flag;
     discriminant(1, -0.5, -0.5, &x1, &x2, &flag);
     ASSERT_DOUBLE_EQ(-0.5, x1);
@@ -46,7 +49,8 @@ TEST(TwoRootsTest, doulbe_input_integer_output) {
 
 // Дробный ввод, дробный вывод (позитивный)
 TEST(TwoRootsTest, doulbe_input_doulbe_output) {
-    double x1, x2;
+    double x1;
+    double x2;
     int flag;
     discriminant(5.5, -1.5, -5, &x1, &x2, &flag);
     ASSERT_DOUBLE_EQ(-0.826801, round(x1 * 1e6) / 1e6);
@@ -56,7 +60,8 @@ TEST(TwoRootsTest, doulbe_input_doulbe_output) {
 
 // Неполный целый ввод без третьего элемента (негативный)
 TEST(TwoRootsTest, incomplete_integer_input_without_third_element) {
-    double x1, x2;
+    double x1;
+    double x2;
     int flag;
     discriminant(1, 3, 0, &x1, &x2, &flag);
     ASSERT_DOUBLE_EQ(-3, x1);
@@ -66,7 +71,8 @@ TEST(TwoRootsTest, incomplete_integer_input_without_third_element) {
 
 // Целый ввод, ноль в выводе (позитивный)
 TEST(TwoRootsTest, integer_input_zero_in_output) {
-    double x1, x2;
+    double x1;
+    double x2;
     int flag;
     discriminant(8, 3, 0, &x1, &x2, &flag);
     ASSERT_DOUBLE_EQ(-0.375, x1);
@@ -78,7 +84,8 @@ TEST(TwoRootsTest, integer_input_zero_in_output) {
 
 // Целый ввод, целый вывод(позитивный)
 TEST(OneRootTest, integer_input_integer_output) {
-    double x1, x2;
+    double x1;
+    double x2;
     int flag;
     discriminant(1, 4, 4, &x1, &x2, &flag);
     ASSERT_DOUBLE_EQ(-2, x1);
@@ -88,7 +95,8 @@ TEST(OneRootTest, integer_input_integer_output) {
 
 // Целый ввод, дробный вывод (позитивный)
 TEST(OneRootTest, integer_input_doulbe_output) {
-    double x1, x2;
+    double x1;
+    double x2;
     int flag;
     discriminant(9, 6, 1, &x1, &x2, &flag);
     ASSERT_DOUBLE_EQ(-0.333333, round(x1 * 1e6) / 1e6);
@@ -98,7 +106,8 @@ TEST(OneRootTest, integer_input_doulbe_output) {
 
 // Неполный целый ввод без первого элемента (негативный)
 TEST(OneRootTest, incomplete_integer_input_without_first_element) {
-    double x1, x2;
+    double x1;
+    double x2;
     int flag;
     discriminant(0, 5, 5, &x1, &x2, &flag);
     ASSERT_DOUBLE_EQ(-1, x1);
@@ -108,7 +117,8 @@ TEST(OneRootTest, incomplete_integer_input_without_first_element) {
 
 // Неполный целый ввод без второго элемента (негативный)
 TEST(OneRootTest, incomplete_integer_input_without_second_element) {
-    double x1, x2;
+    double x1;
+    double x2;
     int flag;
     discriminant(10, 0, 0, &x1, &x2, &flag);
     ASSERT_DOUBLE_EQ(0, x1);
@@ -119,7 +129,8 @@ TEST(OneRootTest, incomplete_integer_input_without_second_element) {
 
 // Неполный целый ввод без третьего элемента (негативный)
 TEST(OneRootTest, incomplete_integer_input_without_third_element) {
-    double x1, x2;
+    double x1;
+    double x2;
     int flag;
     discriminant(1, 0, 0, &x1, &x2, &flag);
     ASSERT_DOUBLE_EQ(0, x1);
@@ -129,7 +140,8 @@ TEST(OneRootTest, incomplete_integer_input_without_third_element) {
 
 // Целый ввод, ноль в выводе (позитивный)
 TEST(OneRootTest, integer_input_zero_in_output) {
-    double x1, x2;
+    double x1;
+    double x2;
     int flag;
     discriminant(1, 0, 0, &x1, &x2, &flag);
     ASSERT_DOUBLE_EQ(0, x1);
@@ -141,7 +153,8 @@ TEST(OneRootTest, integer_input_zero_in_output) {
 
 // Целый ввод, пустой вывод (позитивный)
 TEST(NoRootsTest, doulbe_input_no_output) {
-    double x1, x2;
+    double x1;
+    double x2;
     int flag;
     discriminant(2, -3, 10, &x1, &x2, &flag);
     ASSERT_EQ(1, flag);
@@ -149,7 +162,8 @@ TEST(NoRootsTest, doulbe_input_no_output) {
 
 // Целый ввод, ошибка переполнения (негативный тест)
 TEST(LargeNumbersTest, large_numbers_input_no_output) {
-    double x1, x2;
+    double x1;
+    double x2;
     int flag;
     discriminant(pow(10,1000000000), pow(10,100), 10, &x1, &x2, &flag);
     ASSERT_EQ(1, flag);
@@ -157,7 +171,8 @@ TEST(LargeNumbersTest, large_numbers_input_no_output) {
 
 // Проверка с маленькими коэффициентами
 TEST(NoRootsTest, very_small_input_no_output) {
-    double x1, x2;
+    double x1;
+    double x2;
     int flag;
     discriminant(1e-10, 2e-10, 3e-10, &x1, &x2, &flag);
     ASSERT_EQ(1, flag);
@@ -165,7 +180,8 @@ TEST(NoRootsTest, very_small_input_no_output) {
 
 // Проверка с комплексными корнями
 TEST(NoRootsTest, negative_discriminant_complex_roots) {
-    double x1, x2;
+    double x1;
+    double x2;
     int flag;
     discriminant(1, 2, 5, &x1, &x2, &flag);
     ASSERT_EQ(1, flag);
@@ -175,7 +191,8 @@ TEST(NoRootsTest, negative_discriminant_complex_roots) {
 
 // Проверка на деление на ноль в линейных уравнениях
 TEST(EdgeCaseTest, zero_a_and_b) {
-    double x1, x2;
+    double x1;
+    double x2;
     int flag;
     discriminant(0, 0, 1, &x1, &x2, &flag);
     ASSERT_EQ(1, flag);  // Невозможно решить
@@ -183,7 +200,8 @@ TEST(EdgeCaseTest, zero_a_and_b) {
 
 // Очень большие числа (переполнение)
 TEST(LargeNumbersTest, extremely_large_numbers) {
-    double x1, x2;
+    double x1;
+    double x2;
     int flag;
     discriminant(pow(10, 100), pow(10, 50), 1, &x1, &x2, &flag);
     ASSERT_EQ(1, flag);  // Проверка на переполнение
