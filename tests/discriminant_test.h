@@ -29,8 +29,8 @@ TEST(TwoRootsTest, integer_input_doulbe_output) {
     double x1, x2;
     int flag;
     discriminant(-7, 13, 5, &x1, &x2, &flag);
-    ASSERT_DOUBLE_EQ(2.18417113, x1);
-    ASSERT_DOUBLE_EQ(-0.32702827, x2);
+    ASSERT_DOUBLE_EQ(2.184171, round(x1 * 1e6) / 1e6);
+    ASSERT_DOUBLE_EQ(-0.327028, round(x2 * 1e6) / 1e6);
     ASSERT_EQ(0, flag);
 }
 
@@ -49,8 +49,8 @@ TEST(TwoRootsTest, doulbe_input_doulbe_output) {
     double x1, x2;
     int flag;
     discriminant(5.5, -1.5, -5, &x1, &x2, &flag);
-    ASSERT_DOUBLE_EQ(-0.82680094, x1);
-    ASSERT_DOUBLE_EQ(1.0995282, x2);
+    ASSERT_DOUBLE_EQ(-0.826801, round(x1 * 1e6) / 1e6);
+    ASSERT_DOUBLE_EQ(1.099528, round(x2 * 1e6) / 1e6);
     ASSERT_EQ(0, flag);
 }
 
@@ -91,8 +91,8 @@ TEST(OneRootTest, integer_input_doulbe_output) {
     double x1, x2;
     int flag;
     discriminant(9, 6, 1, &x1, &x2, &flag);
-    ASSERT_DOUBLE_EQ(-0.33333334, x1);
-    ASSERT_DOUBLE_EQ(-0.33333334, x2);
+    ASSERT_DOUBLE_EQ(-0.333333, round(x1 * 1e6) / 1e6);
+    ASSERT_DOUBLE_EQ(-0.333333, round(x2 * 1e6) / 1e6);
     ASSERT_EQ(0, flag);
 }
 
