@@ -12,7 +12,7 @@ set(SOURCES
         )
 
 set(HEADERS
-mathematical_calculator.h
+        mathematical_calculator.h
         )
 
 add_executable(${PROJECT_NAME} ${SOURCES} ${HEADERS})
