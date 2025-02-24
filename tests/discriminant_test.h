@@ -19,38 +19,38 @@ TEST(TwoRootsTest, integer_input_integer_output) {
     double x1, x2;
     int flag;
     discriminant(1, -5, 4, &x1, &x2, &flag);
-    ASSERT_FLOAT_EQ(1.0, x1);
-    ASSERT_FLOAT_EQ(4.0, x2);
+    ASSERT_DOUBLE_EQ(1.0, x1);
+    ASSERT_DOUBLE_EQ(4.0, x2);
     ASSERT_EQ(0, flag);
 }
 
 // Целый ввод, дробный вывод (позитивный)
-TEST(TwoRootsTest, integer_input_float_output) {
+TEST(TwoRootsTest, integer_input_doulbe_output) {
     double x1, x2;
     int flag;
     discriminant(-7, 13, 5, &x1, &x2, &flag);
-    ASSERT_FLOAT_EQ(2.18417113, x1);
-    ASSERT_FLOAT_EQ(-0.32702827, x2);
+    ASSERT_DOUBLE_EQ(2.18417113, x1);
+    ASSERT_DOUBLE_EQ(-0.32702827, x2);
     ASSERT_EQ(0, flag);
 }
 
 // Дробный ввод, целый вывод (позитивный)
-TEST(TwoRootsTest, float_input_integer_output) {
+TEST(TwoRootsTest, doulbe_input_integer_output) {
     double x1, x2;
     int flag;
     discriminant(1, -0.5, -0.5, &x1, &x2, &flag);
-    ASSERT_FLOAT_EQ(-0.5, x1);
-    ASSERT_FLOAT_EQ(1.0, x2);
+    ASSERT_DOUBLE_EQ(-0.5, x1);
+    ASSERT_DOUBLE_EQ(1.0, x2);
     ASSERT_EQ(0, flag);
 }
 
 // Дробный ввод, дробный вывод (позитивный)
-TEST(TwoRootsTest, float_input_float_output) {
+TEST(TwoRootsTest, doulbe_input_doulbe_output) {
     double x1, x2;
     int flag;
     discriminant(5.5, -1.5, -5, &x1, &x2, &flag);
-    ASSERT_FLOAT_EQ(-0.82680094, x1);
-    ASSERT_FLOAT_EQ(1.0995282, x2);
+    ASSERT_DOUBLE_EQ(-0.82680094, x1);
+    ASSERT_DOUBLE_EQ(1.0995282, x2);
     ASSERT_EQ(0, flag);
 }
 
@@ -59,8 +59,8 @@ TEST(TwoRootsTest, incomplete_integer_input_without_third_element) {
     double x1, x2;
     int flag;
     discriminant(1, 3, 0, &x1, &x2, &flag);
-    ASSERT_FLOAT_EQ(-3, x1);
-    ASSERT_FLOAT_EQ(0, x2);
+    ASSERT_DOUBLE_EQ(-3, x1);
+    ASSERT_DOUBLE_EQ(0, x2);
     ASSERT_EQ(0, flag);
 }
 
@@ -69,8 +69,8 @@ TEST(TwoRootsTest, integer_input_zero_in_output) {
     double x1, x2;
     int flag;
     discriminant(8, 3, 0, &x1, &x2, &flag);
-    ASSERT_FLOAT_EQ(-0.375, x1);
-    ASSERT_FLOAT_EQ(0, x2);
+    ASSERT_DOUBLE_EQ(-0.375, x1);
+    ASSERT_DOUBLE_EQ(0, x2);
     ASSERT_EQ(0, flag);
 }
 
@@ -81,18 +81,18 @@ TEST(OneRootTest, integer_input_integer_output) {
     double x1, x2;
     int flag;
     discriminant(1, 4, 4, &x1, &x2, &flag);
-    ASSERT_FLOAT_EQ(-2, x1);
-    ASSERT_FLOAT_EQ(-2, x2);
+    ASSERT_DOUBLE_EQ(-2, x1);
+    ASSERT_DOUBLE_EQ(-2, x2);
     ASSERT_EQ(0, flag);
 }
 
 // Целый ввод, дробный вывод (позитивный)
-TEST(OneRootTest, integer_input_float_output) {
+TEST(OneRootTest, integer_input_doulbe_output) {
     double x1, x2;
     int flag;
     discriminant(9, 6, 1, &x1, &x2, &flag);
-    ASSERT_FLOAT_EQ(-0.33333334, x1);
-    ASSERT_FLOAT_EQ(-0.33333334, x2);
+    ASSERT_DOUBLE_EQ(-0.33333334, x1);
+    ASSERT_DOUBLE_EQ(-0.33333334, x2);
     ASSERT_EQ(0, flag);
 }
 
@@ -101,8 +101,8 @@ TEST(OneRootTest, incomplete_integer_input_without_first_element) {
     double x1, x2;
     int flag;
     discriminant(0, 5, 5, &x1, &x2, &flag);
-    ASSERT_FLOAT_EQ(-1, x1);
-    ASSERT_FLOAT_EQ(-1, x2);
+    ASSERT_DOUBLE_EQ(-1, x1);
+    ASSERT_DOUBLE_EQ(-1, x2);
     ASSERT_EQ(0, flag);
 }
 
@@ -111,8 +111,8 @@ TEST(OneRootTest, incomplete_integer_input_without_second_element) {
     double x1, x2;
     int flag;
     discriminant(10, 0, 0, &x1, &x2, &flag);
-    ASSERT_FLOAT_EQ(0, x1);
-    ASSERT_FLOAT_EQ(0, x2);
+    ASSERT_DOUBLE_EQ(0, x1);
+    ASSERT_DOUBLE_EQ(0, x2);
     ASSERT_EQ(0, flag);
 }
 
@@ -122,8 +122,8 @@ TEST(OneRootTest, incomplete_integer_input_without_third_element) {
     double x1, x2;
     int flag;
     discriminant(1, 0, 0, &x1, &x2, &flag);
-    ASSERT_FLOAT_EQ(0, x1);
-    ASSERT_FLOAT_EQ(0, x2);
+    ASSERT_DOUBLE_EQ(0, x1);
+    ASSERT_DOUBLE_EQ(0, x2);
     ASSERT_EQ(0, flag);
 }
 
@@ -132,15 +132,15 @@ TEST(OneRootTest, integer_input_zero_in_output) {
     double x1, x2;
     int flag;
     discriminant(1, 0, 0, &x1, &x2, &flag);
-    ASSERT_FLOAT_EQ(0, x1);
-    ASSERT_FLOAT_EQ(0, x2);
+    ASSERT_DOUBLE_EQ(0, x1);
+    ASSERT_DOUBLE_EQ(0, x2);
     ASSERT_EQ(0, flag);
 }
 
 /* ------------------- D < 0, нет корней -------------------  */
 
 // Целый ввод, пустой вывод (позитивный)
-TEST(NoRootsTest, float_input_no_output) {
+TEST(NoRootsTest, doulbe_input_no_output) {
     double x1, x2;
     int flag;
     discriminant(2, -3, 10, &x1, &x2, &flag);
