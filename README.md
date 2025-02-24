@@ -1,8 +1,8 @@
-[![CI/CD GitHub Actions](https://github.com/nikitagordeev10/petrsu-unit-testing-001-bundle-qt-gtest/actions/workflows/test-action.yml/badge.svg)](https://github.com/nikitagordeev10/petrsu-unit-testing-001-bundle-qt-gtest/actions/workflows/test-action.yml)
-[![Coverage Status](https://coveralls.io/repos/nikitagordeev10/petrsu-unit-testing-001-bundle-qt-gtest/badge.svg?branch=main)](https://coveralls.io/github/nikitagordeev10/petrsu-unit-testing-001-bundle-qt-gtest?branch=main)
-[![Quality Gate](https://sonarcloud.io/api/project_badges/measure?project=nikitagordeev10_petrsu-unit-testing-001-bundle-qt-gtest&metric=alert_status)](https://sonarcloud.io/dashboard?id=nikitagordeev10_petrsu-unit-testing-001-bundle-qt-gtest)
-[![Bugs](https://sonarcloud.io/api/project_badges/measure?project=nikitagordeev10_petrsu-unit-testing-001-bundle-qt-gtest&metric=bugs)](https://sonarcloud.io/summary/new_code?id=nikitagordeev10_petrsu-unit-testing-001-bundle-qt-gtest)
-[![Code smells](https://sonarcloud.io/api/project_badges/measure?project=nikitagordeev10_petrsu-unit-testing-001-bundle-qt-gtest&metric=code_smells)](https://sonarcloud.io/dashboard?id=nikitagordeev10_petrsu-unit-testing-001-bundle-qt-gtest)
+[![CI/CD GitHub Actions](https://github.com/nikitagordeev10/petrsu-unit-testing-001-bundle-cmake-gtest/actions/workflows/test-action.yml/badge.svg)](https://github.com/nikitagordeev10/petrsu-unit-testing-001-bundle-cmake-gtest/actions/workflows/test-action.yml)
+[![Coverage Status](https://coveralls.io/repos/nikitagordeev10/petrsu-unit-testing-001-bundle-cmake-gtest/badge.svg?branch=main)](https://coveralls.io/github/nikitagordeev10/petrsu-unit-testing-001-bundle-cmake-gtest?branch=main)
+[![Quality Gate](https://sonarcloud.io/api/project_badges/measure?project=nikitagordeev10_petrsu-unit-testing-001-bundle-cmake-gtest&metric=alert_status)](https://sonarcloud.io/dashboard?id=nikitagordeev10_petrsu-unit-testing-001-bundle-cmake-gtest)
+[![Bugs](https://sonarcloud.io/api/project_badges/measure?project=nikitagordeev10_petrsu-unit-testing-001-bundle-cmake-gtest&metric=bugs)](https://sonarcloud.io/summary/new_code?id=nikitagordeev10_petrsu-unit-testing-001-bundle-cmake-gtest)
+[![Code smells](https://sonarcloud.io/api/project_badges/measure?project=nikitagordeev10_petrsu-unit-testing-001-bundle-cmake-gtest&metric=code_smells)](https://sonarcloud.io/dashboard?id=nikitagordeev10_petrsu-unit-testing-001-bundle-cmake-gtest)
 
 
 ### О репозитории
