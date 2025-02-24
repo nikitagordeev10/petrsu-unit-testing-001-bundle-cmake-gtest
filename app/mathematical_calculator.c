@@ -24,30 +24,7 @@ void discriminant(float a, float b, float c, float* x1, float* x2, int* has_real
         *has_real_roots = 1; // Невозможно решить
     }
 }
-  
-void viet(float a, float b, float c, float* x1, float* x2, int* found) {
-    *found = 0;
-    float product = c / a;
-    float sum = -b / a;
 
-    if (product >= 0) {
-        for (*x2 = -sqrt(product); *x2 <= sqrt(product); *x2 += 0.1) {
-            *x1 = product / (*x2);
-            if (fabs(*x1 + *x2 - sum) < 1e-5) { // Проверка суммы корней
-                *found = 1;
-                return;
-            }
-        }
-    } else {
-        for (*x2 = sqrt(-product); *x2 >= -sqrt(-product); *x2 -= 0.1) {
-            *x1 = product / (*x2);
-            if (fabs(*x1 + *x2 - sum) < 1e-5) {
-                *found = 1;
-                return;
-            }
-        }
-    }
-}
 
 int modify_value(int b) {
     return b + 4;

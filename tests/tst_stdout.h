@@ -103,4 +103,14 @@ TEST(TestStdOut, usingCapture) {
     f.close();
 }
 
+// Проверка вывода сообщений в stdout с использованием перехвата потока
+TEST(TestStdOut, printStdoutMessages) {
+    testing::internal::CaptureStdout();  // Перехватываем вывод
+    printStdoutMessages();               // Вызываем функцию с выводом
+    std::string output = testing::internal::GetCapturedStdout(); // Получаем результат
+
+    std::string expected_output = "This is a test message from mathematical_calculator.c\nDo not disturb\n";
+    ASSERT_EQ(output, expected_output); // Проверяем, что вывод совпадает с ожидаемым
+}
+
 #endif // TST_STDOUT_H

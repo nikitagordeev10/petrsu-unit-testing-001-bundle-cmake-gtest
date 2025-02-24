@@ -21,3 +21,12 @@ TEST(test1, suite2)
 {
     EXPECT_EQ(modify_value(-1), 3);
 }
+
+// Проверка для пустых значений
+TEST(modifyValueTest, testModifyValueWithZero) {
+    ASSERT_EQ(modify_value(0), 4); // Проверка с 0
+}
+
+TEST(modifyValueTest, testModifyValueWithNegative) {
+    ASSERT_EQ(modify_value(-1), 3); // Проверка с отрицательным значением
+}

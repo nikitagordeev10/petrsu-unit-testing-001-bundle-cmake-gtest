@@ -83,15 +83,6 @@ TEST(TwoRootsTest, integer_input_zero_in_output) {
     ASSERT_EQ(0, flag);
 }
 
-// Целый ввод, целый вывод, другая программа (позитивный)
-// TEST(EquivalentProgram, viet) {
-//     discriminant(5, 6, 1, &x1, &x2, &flag);
-//     viet(5, 6, 1, &vx1, &vx2, &vflag);
-
-//     ASSERT_FLOAT_EQ(x1, vx1);
-//     ASSERT_FLOAT_EQ(x2, vx2);
-// }
-
 /* ------------------- D = 0, один корень -------------------  */
 
 // Целый ввод, целый вывод(позитивный)
@@ -143,6 +134,14 @@ TEST(OneRootTest, integer_input_zero_in_output) {
     ASSERT_EQ(0, flag);
 }
 
+// Тест с нулевым значением для b и c
+TEST(OneRootTest, zero_b_and_c) {
+    discriminant(0, 0, 0, &x1, &x2, &flag);
+    ASSERT_FLOAT_EQ(0, x1);
+    ASSERT_FLOAT_EQ(0, x2);
+    ASSERT_EQ(0, flag);
+}
+
 /* ------------------- D < 0, нет корней -------------------  */
 
 // Целый ввод, пустой вывод (позитивный)
@@ -155,6 +154,32 @@ TEST(NoRootsTest, float_input_no_output) {
 TEST(LargeNumbersTest, large_numbers_input_no_output) {
     discriminant(pow(10,1000000000), pow(10,100), 10, &x1, &x2, &flag);
     ASSERT_EQ(1, flag);
+}
+
+// Проверка с маленькими коэффициентами
+TEST(NoRootsTest, very_small_input_no_output) {
+    discriminant(1e-10, 2e-10, 3e-10, &x1, &x2, &flag);
+    ASSERT_EQ(1, flag);
+}
+
+// Проверка с комплексными корнями
+TEST(NoRootsTest, negative_discriminant_complex_roots) {
+    discriminant(1, 2, 5, &x1, &x2, &flag);
+    ASSERT_EQ(1, flag);
+}
+
+/* ------------------- Особые случаи ------------------- */
+
+// Проверка на деление на ноль в линейных уравнениях
+TEST(EdgeCaseTest, zero_a_and_b) {
+    discriminant(0, 0, 1, &x1, &x2, &flag);
+    ASSERT_EQ(1, flag);  // Невозможно решить
+}
+
+// Очень большие числа (переполнение)
+TEST(LargeNumbersTest, extremely_large_numbers) {
+    discriminant(pow(10, 100), pow(10, 50), 1, &x1, &x2, &flag);
+    ASSERT_EQ(1, flag);  // Проверка на переполнение
 }
 
 #endif // DISCRIMINANT_H
