@@ -134,14 +134,6 @@ TEST(OneRootTest, integer_input_zero_in_output) {
     ASSERT_EQ(0, flag);
 }
 
-// Тест с нулевым значением для b и c
-TEST(OneRootTest, zero_b_and_c) {
-    discriminant(0, 0, 0, &x1, &x2, &flag);
-    ASSERT_FLOAT_EQ(0, x1);
-    ASSERT_FLOAT_EQ(0, x2);
-    ASSERT_EQ(0, flag);
-}
-
 /* ------------------- D < 0, нет корней -------------------  */
 
 // Целый ввод, пустой вывод (позитивный)

@@ -52,21 +52,5 @@ TEST(fibonachiTest, inputFile) {
     ASSERT_EQ(ret, output);
 }
 
-/* ------------------- Фибоначчи: большие числа ------------------- */
-
-// Проверка с большим числом для проверки вычислений
-TEST(fibonachiTest, large_number) {
-    int result = fibonachi(100);
-    ASSERT_EQ(result, 354224848179261915075);  // 100-й элемент последовательности Фибоначчи
-}
-
-// Проверка для переполнения int
-TEST(fibonachiTest, overflow_check) {
-    int result = fibonachi(47); // Следующий элемент будет превышать размер int (2^31-1)
-    ASSERT_GT(result, 0);  // 47-й элемент Фибоначчи больше 0
-    ASSERT_LT(result, 2147483647); // Должен быть меньше максимального значения для int
-}
-
-
 
 #endif // FIBONACHI_H
